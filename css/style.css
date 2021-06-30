@@ -1,0 +1,7 @@
+#header {
+    display: flex; /* or inline-flex */
+}
+
+#profile_picture {
+    border-radius: 50%;
+}
