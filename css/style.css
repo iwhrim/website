@@ -1,7 +1,30 @@
-#header {
-    display: flex; /* or inline-flex */
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+#header {     
+     display: flex;
+    justify-content: center;    
+}
+
+#menu {     
+    display: flex;
+    justify-content: center;      
 }
 
 #profile_picture {
     border-radius: 50%;
+    margin: 15px;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+
+button {
+    margin: 5px;
 }
