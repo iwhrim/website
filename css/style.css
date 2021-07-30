@@ -1,30 +1,35 @@
-#content {
-    display: flex;
-    flex-direction: column;
+.content {
+  display: flex;
+  justify-content: center;
 }
 
-#header {     
-     display: flex;
-    justify-content: center;    
+.header {
+  width: clamp(300px, 800px, 900px);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-#menu {     
-    display: flex;
-    justify-content: center;      
+.profile_picture_div {
+  display: flex;
+  justify-content: center;
 }
 
-#profile_picture {
-    border-radius: 50%;
-    margin: 15px;
+.profile_picture {
+  border-radius: 50%;
+  margin: 15px;
 }
 
-#description {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
-button {
-    margin: 5px;
+h1,
+h2,
+h3,
+h4 {
+  font-family: Raleway;
 }
