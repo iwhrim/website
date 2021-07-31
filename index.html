@@ -1,46 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gustavo Teixeira</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gustavo Teixeira</title>
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dracula.css" />
+  </head>
 
-<body>
-
-  <div class="content">
-    <div class="header">
-      <div class="profile_picture_div">
-        <img src="imagens/profile_picture.jpg" alt="Minha foto" height="150px" width="150px" class="profile_picture">
+  <body>
+    <div class="content">
+      <div class="header">
+        <div class="profile_picture_div">
+          <img
+            src="imagens/profile_picture.jpg"
+            alt="Minha foto"
+            height="150px"
+            width="150px"
+            class="profile_picture"
+          />
+        </div>
+        <div class="description">
+          <h1 class="myName">Gustavo Teixeira</h1>
+          <h3 class="profession">Software Engineer</h3>
+        </div>
       </div>
-      <div class="description">
-        <h1>Gustavo Teixeira</h1>
-        <h3>Software Engineer</h3>
-      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#aboutMe"> About me </a></li>
+          <li><a href="#projects"> Projects </a></li>
+          <li><a href="#posts"> Posts </a></li>
+          <li><a href="#contacts"> Contacts </a></li>
+        </ul>
+      </nav>
+
+      <!-- <div class="article">
+        <pre><code>
+            @Override
+            public String uploadFile(MultipartFile file) {
+                String blobPath = UUID.randomUUID() + "/" + file.getOriginalFilename();
+                var blobClient = attachmentClient.getBlobClient(blobPath);
+                log.debug("New blob client created with name: {}.", blobPath);
+        
+                try (var dataStream = new ByteArrayInputStream(file.getBytes())) {
+                    blobClient.upload(dataStream, file.getSize());
+                    log.debug("Success uploading new blob: {}.", blobPath);
+                } catch (IOException e) {
+                    log.error("Error while trying to upload a new blob: {}", e.getMessage());
+                }
+        
+                return blobClient.getBlobUrl();
+            }
+          </code></pre>
+      </div> -->
     </div>
-  </div>
 
-
-
-  <!-- <pre><code>
-    @SpringBootApplication
-    public class MealManagerApplication {
-
-        public static void main(String[] args) {
-            SpringApplication.run(MealManagerApplication.class, args);
-        }
-
-    }
-  </code></pre> -->
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
-  <script>hljs.highlightAll();</script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
 </html>
