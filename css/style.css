@@ -36,60 +36,66 @@ h4 {
 }
 
 .article {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-family: 'Fira Code' !important;;
-    font-size: 16px;
-    font-weight: 400;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "Fira Code" !important;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 li {
-    list-style-type: none;
-    margin: 0 2vw;
-    font-size: 2vh;
+  list-style-type: none;
+  margin: 0 2vw;
+  font-size: 2vh;
 }
 a {
-    text-decoration: none;
-    font-family: 'Fira Code' !important;;
-    color: darkslategray;
-    padding: 5px;
+  text-decoration: none;
+  font-family: "Fira Code" !important;
+  color: darkslategray;
+  padding: 5px;
 }
 
-a:hover{
-    background-color: #f2f2f2;
-    border-radius: 10%;
-  }
+a:hover {
+  background-color: #f2f2f2;
+  border-radius: 10%;
+}
 
 nav {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
-ul{
-    margin: 0;
-    padding: 0;
+ul {
+  margin: 0;
+  padding: 0;
 
-    display: flex
-  }
-  
-  body{
-    margin: 0;
+  display: flex;
+}
+
+body {
+  margin: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  /*shows elements in a column*/
+  ul {
+    flex-direction: column;
   }
 
-  @media only screen and (max-width: 500px) {
-    /*shows elements in a column*/
-    ul{
-      flex-direction: column;
-    }
-    
-    /* deletes margin on top or bottom of the a tag*/
-    li{
-      margin: 0;
-    }
-   /* makes sure that the a tag will take the entire screen*/
-    a{
-      display: block;
-    }
+  /* deletes margin on top or bottom of the a tag*/
+  li {
+    margin: 0;
   }
+  /* makes sure that the a tag will take the entire screen*/
+  a {
+    display: block;
+  }
+}
+
+content {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
