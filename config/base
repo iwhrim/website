@@ -1,1 +1,3 @@
-teste
+sudo pacman -S xorg-server xorg-xinit xorg-apps
+
+sudo pacman -S i3-gaps dmenu i3status i3blocks xfce4-terminal chromium gimp picom thunar
